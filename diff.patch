@@ -1,0 +1,48 @@
+diff --git a/wp-content/themes/eac/header.php b/wp-content/themes/eac/header.php
+index 4fe3157..d87aae5 100644
+--- a/wp-content/themes/eac/header.php
++++ b/wp-content/themes/eac/header.php
+@@ -7,7 +7,6 @@
+         </div></div>
+         <h2><?php echo get_bloginfo( 'description' ); ?></h2>
+         </a>
+-        <?php wp_head(); ?>
+       </header>
+ 
+       <nav id="menu">
+diff --git a/wp-content/themes/eac/index.php b/wp-content/themes/eac/index.php
+index 403acc2..f341c5d 100644
+--- a/wp-content/themes/eac/index.php
++++ b/wp-content/themes/eac/index.php
+@@ -5,6 +5,7 @@
+          <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+         <title><?php echo get_bloginfo( 'name' ); ?></title>
+         <link rel="icon" href="<?php echo get_bloginfo('template_directory'); ?>/logo.svg" />
++        <?php wp_head(); ?>
+     </head>
+ 
+     <body>
+diff --git a/wp-content/themes/eac/page.php b/wp-content/themes/eac/page.php
+index 68c8480..723e6e7 100644
+--- a/wp-content/themes/eac/page.php
++++ b/wp-content/themes/eac/page.php
+@@ -4,6 +4,7 @@
+         <meta charset="utf-8" />
+          <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+         <title><?php echo get_bloginfo( 'name' ); ?></title>
++        <?php wp_head(); ?>
+     </head>
+ 
+     <body>
+diff --git a/wp-content/themes/eac/single.php b/wp-content/themes/eac/single.php
+index d6ee7a6..98c261a 100644
+--- a/wp-content/themes/eac/single.php
++++ b/wp-content/themes/eac/single.php
+@@ -4,6 +4,7 @@
+         <meta charset="utf-8" />
+          <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+         <title><?php echo get_bloginfo( 'name' ); ?></title>
++        <?php wp_head(); ?>
+     </head>
+ 
+     <body>

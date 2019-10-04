@@ -7,7 +7,6 @@
         </div></div>
         <h2><?php echo get_bloginfo( 'description' ); ?></h2>
         </a>
-        <?php wp_head(); ?>
       </header>
 
       <nav id="menu">
